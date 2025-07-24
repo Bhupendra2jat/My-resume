@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhupendra Jat - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* A slightly off-white background */
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .section-title {
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Bhupendra Jat</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition duration-300">Projects</a>
+                <a href="#achievements" class="text-gray-600 hover:text-blue-600 transition duration-300">Achievements</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-600">Projects</a>
+            <a href="#achievements" class="block py-2 text-gray-600 hover:text-blue-600">Achievements</a>
+            <a href="#contact" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-full text-center hover:bg-blue-700">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-gradient text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <img src="http://googleusercontent.com/file_content/2" alt="Bhupendra Jat" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-lg">
+                    <div class="text-left">
+                        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Bhupendra Jat</h1>
+                        <p class="mt-4 text-lg md:text-2xl font-light">Aspiring AI/ML Engineer & Researcher</p>
+                        <p class="mt-2 text-blue-200">B.Tech Student at IIT Delhi | Passionate about solving real-world problems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">About Me</h2>
+                <div class="max-w-4xl mx-auto text-center text-lg text-gray-700 leading-relaxed">
+                    <p class="mb-4">
+                        I am an Engineering Physics undergraduate at IIT Delhi (CGPA: 7.21) with a strong interest in Artificial Intelligence and Machine Learning. My coursework and projects have provided me with a solid foundation in computer science and practical problem-solving.
+                    </p>
+                    <p class="mb-4">
+                        I have completed the "Machine Learning with Python" course from MIT and have hands-on experience developing Android applications with Java and AI tools. I am proficient in Python for AI/ML tasks and am always looking for opportunities to apply my skills to create innovative and effective solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Technical Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <h3 class="text-xl font-bold mb-4 text-blue-600">Programming Languages</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><span class="font-semibold">Python:</span> Proficient in AI/ML and data analysis.</li>
+                            <li><span class="font-semibold">Java:</span> Experienced in Android App Development.</li>
+                            <li><span class="font-semibold">C++:</span> Strong foundation in algorithms and data structures.</li>
+                             <li><span class="font-semibold">Verilog:</span> Hardware description language for digital circuits.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <h3 class="text-xl font-bold mb-4 text-blue-600">Libraries & Frameworks</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><span class="font-semibold">AI/ML:</span> NumPy, Pandas, Scikit-learn</li>
+                            <li><span class="font-semibold">Android:</span> Android Studio</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <h3 class="text-xl font-bold mb-4 text-blue-600">Tools & Software</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><span class="font-semibold">Design:</span> AutoDesk Inventor, Figma, Blender</li>
+                            <li><span class="font-semibold">3D Printing:</span> Prusa Slicer, Prusa i3 MK3</li>
+                            <li><span class="font-semibold">General:</span> Git, LaTeX, MS Office Suite</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden card-hover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-blue-700">Fake News Detector</h3>
+                            <p class="text-gray-600 mb-4">Developed a Machine Learning model using Logistic Regression to classify news articles as real or fake. Employed text vectorization techniques and evaluated the model on precision, recall, and accuracy.</p>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Scikit-learn</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden card-hover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-blue-700">1D Actuator for Granular Experiment</h3>
+                            <p class="text-gray-600 mb-4">Designed and fabricated a 1D actuator using AutoDesk Inventor and 3D printing, which improved experimental accuracy in granular material studies by over 30%.</p>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">3D-Design</span>
+                             <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Fabrication</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden card-hover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-blue-700">AI-Powered Android Apps</h3>
+                            <p class="text-gray-600 mb-4">Developed several Android apps using Java and Android Studio. Leveraged AI tools to accelerate the development process and implement intelligent features.</p>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Java</span>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">Android Studio</span>
+                             <span class="inline-block bg-purple-100 text-purple-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">AI Tools</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Key Achievements</h2>
+                <div class="max-w-4xl mx-auto space-y-8">
+
+                    <div class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-6 card-hover">
+                        <div class="flex-shrink-0">
+                            <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m0 18a9 9 0 009-9m-9 9a9 9 0 00-9-9"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Research Internship Selection - Israel</h3>
+                            <p class="text-gray-600 mt-1">Selected for a prestigious research internship under the guidance of Professor Freddy Gabbay, focusing on cutting-edge topics in the field.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-6 card-hover">
+                         <div class="flex-shrink-0">
+                             <svg class="w-12 h-12 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Flipkart GRiD 7.0 - Participant</h3>
+                            <p class="text-gray-600 mt-1">Selected for Flipkart GRiD 7.0 Semi Finale and awarded a Pre-Placement Interview (PPI) offer for outstanding performance in a national-level software development challenge.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-6 card-hover">
+                        <div class="flex-shrink-0">
+                            <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">JEE Advanced & Mains Rank Holder</h3>
+                            <p class="text-gray-600 mt-1">Secured an All India Rank of 1885 in JEE Advanced 2022 (from ~0.25M candidates) and 3396 in JEE Mains 2022 (from ~1.2M candidates).</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl font-bold text-center mb-4 section-title">Get In Touch</h2>
+                 <p class="text-gray-700 max-w-2xl mx-auto mb-8">I am actively looking for opportunities where I can leverage my skills in AI/ML and software development. Please feel free to reach out!</p>
+                 <div class="flex justify-center items-center space-x-6">
+                    <a href="mailto:bhupendra2jat@gmail.com" class="inline-block bg-blue-600 text-white text-lg px-8 py-4 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg">
+                        bhupendra2jat@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/bhupendra-973453256/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-600">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                    </a>
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Bhupendra Jat. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Designed to impress. Updated as of June 2025.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+
+</html>
